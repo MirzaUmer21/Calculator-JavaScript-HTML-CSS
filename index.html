@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <title>Calculator | JavaScript</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculator">
+        <input type="text" id="calculatorInput" />
+        <table>
+          <tr>
+            <td class="lightGray" onclick="inputHandler('AC')">AC</td>
+            <td class="lightGray" onclick="inputHandler('C')">C</td>
+            <td class="lightGray" onclick="inputHandler('%')">%</td>
+            <td class="yellow" onclick="inputHandler('/')">/</td>
+          </tr>
+
+          <tr>
+            <td class="gray" onclick="inputHandler(7)">7</td>
+            <td class="gray" onclick="inputHandler(8)">8</td>
+            <td class="gray" onclick="inputHandler(9)">9</td>
+            <td class="yellow" onclick="inputHandler('*')">X</td>
+          </tr>
+          <tr>
+            <td class="gray" onclick="inputHandler(4)">4</td>
+            <td class="gray" onclick="inputHandler(5)">5</td>
+            <td class="gray" onclick="inputHandler(6)">6</td>
+            <td class="yellow" onclick="inputHandler('-')">-</td>
+          </tr>
+          <tr>
+            <td class="gray" onclick="inputHandler(1)">1</td>
+            <td class="gray" onclick="inputHandler(2)">2</td>
+            <td class="gray" onclick="inputHandler(3)">3</td>
+            <td class="yellow" onclick="inputHandler('+')">+</td>
+          </tr>
+          <tr>
+            <td class="gray" onclick="inputHandler(0)">0</td>
+            <td class="gray" onclick="inputHandler('.')">.</td>
+            <td class="gray" onclick="inputHandler('+-')">+/-</td>
+
+            <td class="yellow" onclick="calculateHandler()">=</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
